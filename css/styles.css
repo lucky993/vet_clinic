@@ -11227,13 +11227,14 @@ html {
 aside,
 section,
 .plans {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .plans {
-  border-radius: 10%;
-  min-height: 100px;
+  border-radius: 50px;
+  min-height: 600px;
+  position: relative;
 }
 
 .app-badge {
@@ -11551,10 +11552,16 @@ footer a:focus {
   }
 }
 
+.header-img {
+  border-radius: 10px;
+}
+
 @media (max-width: 576px) {
   .header-img,
   .comment-img {
     width: inherit;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 
@@ -11562,17 +11569,29 @@ footer a:focus {
   .header-img,
   .comment-img {
     width: inherit;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 @media (min-width: 768px) {
   .header-img,
   .comment-img {
     width: inherit;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .carousel {
+    height: 700px;
   }
 }
 @media (min-width: 992px) {
   .header-img {
     width: 100%;
+  }
+
+  .carousel {
+    height: 700px;
   }
 
   .comment-img {
@@ -11588,6 +11607,10 @@ footer a:focus {
     width: 100%;
   }
 
+  .carousel {
+    height: 400px;
+  }
+
   .comment-img {
     width: 300px;
     height: 300px;
@@ -11598,6 +11621,10 @@ footer a:focus {
 @media (min-width: 1400px) {
   .header-img {
     width: 100%;
+  }
+
+  .carousel {
+    height: 400px;
   }
 
   .comment-img {
